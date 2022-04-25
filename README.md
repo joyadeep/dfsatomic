@@ -1,4 +1,5 @@
 # Deerhold Foodsystem with atomic design
+## with vite and react TS
 
 
 ## installation process ...
