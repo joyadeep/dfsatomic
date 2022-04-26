@@ -6,12 +6,15 @@ interface Iinput{
     name?:string;
     value?:string;
     style?:string;
-    handleChange?:()=>void;
+    handleChange?:(event:React.ChangeEvent<HTMLInputElement>)=>void;
 }
 
 const Input:React.FC<Iinput> = ({type,placeholder,name,value,handleChange,style}) => {
   return (
-    <input type={type} placeholder={placeholder} className={`w-full h-12 outline-none pl-3 text-xl rounded border-2 border-slate-300 ${style}`} name={name} value={value} onChange={handleChange}  />
+    <>
+    <input type={type} placeholder={placeholder} name={name} className={`w-full h-12 outline-none pl-3 text-xl rounded border-2 border-slate-300 ${style}`} value={value} onChange={handleChange}  />
+   
+    </>
   )
 }
 
