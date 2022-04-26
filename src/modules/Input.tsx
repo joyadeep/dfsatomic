@@ -11,7 +11,7 @@ interface Iinput{
 
 const Input:React.FC<Iinput> = ({type,placeholder,name,value,handleChange,style}) => {
   return (
-    <input type={type} placeholder={placeholder} className={`w-full h-10 outline-none pl-3 text-xl rounded border-2 border-slate-300 ${style}`} name={name} value={value} onChange={handleChange}  />
+    <input type={type} placeholder={placeholder} className={`w-full h-12 outline-none pl-3 text-xl rounded border-2 border-slate-300 ${style}`} name={name} value={value} onChange={handleChange}  />
   )
 }
 
