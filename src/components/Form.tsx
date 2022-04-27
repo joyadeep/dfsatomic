@@ -33,7 +33,7 @@ const Form = () => {
   // }
 
   return (
-    <div className='w-10/12 font-poppins border bg-white   md:w-1/3 px-4 bg-slate-50 rounded-lg shadow-md overflow-hidden py-2'>
+    <div className='w-10/12 font-poppins border bg-white   sm:w-1/3 px-4 bg-slate-50 rounded-lg shadow-md overflow-hidden py-2'>
 
         <form className=' flex flex-col text-center'  >
             <div className=' text-center text-4xl font-semibold text-slate-700 my-5'>Login</div>
