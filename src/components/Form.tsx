@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Button from '../modules/Button'
-import Input from '../modules/Input'
+import Button from '../atoms/Button'
+import Input from '../atoms/Input'
 import {useForm} from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import {InputSchema} from '../schema/InputSchema'

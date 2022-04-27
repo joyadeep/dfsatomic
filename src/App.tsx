@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Input from './modules/Input'
-import Button from './modules/Button'
+import Input from './atoms/Input'
+import Button from './atoms/Button'
 import Form from './components/Form'
 import {Route,Routes} from 'react-router-dom';
 import LoginPage from './pages/LoginPage'

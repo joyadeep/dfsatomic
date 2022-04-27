@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {MenuIcon,XIcon} from '@heroicons/react/outline'
 import logo from "../assets/images/logo.png"
 import {Link} from "react-router-dom";
+import User from '../molecules/User';
 
 const Header = () => {
   const[ispressed,setIspressed]=useState(false);
@@ -18,11 +19,12 @@ const Header = () => {
           <div className={`${ispressed?"bg-onyx text-white translate-x-0 ":"translate-x-full hidden  "}  flex flex-col justify-evenly items-center absolute top-20 w-screen h-[calc(100vh-80px)] overflow-hidden sm:h-fit sm:bg-transparent sm:flex sm:flex-row sm:visible sm:w-fit sm:space-x-5 sm:right-0 sm:translate-x-0 sm:pr-5 sm:relative sm:top-0  font-poppins text-xl `}>
 
              {/* TODO : should have done translate instead of -right-32 . kya kar raha heh tu bahi. ye doglapan hain.. */}
-          <div>Home</div>
+          <User/>
+          {/* <div>Home</div>
           <div>About</div>
           <div>Contact</div>
-          <div>Login</div>
-          <Link to="/forgot_password" onClick={()=>{setIspressed(false)}}>go somewhere</Link>
+          <div>Login</div> */}
+          {/* <Link to="/forgot_password" onClick={()=>{setIspressed(false)}}>go somewhere</Link> */}
           {/* TODO : add route and onclick navigate to page + change ispressed state to false */}
         </div>
     </div>
