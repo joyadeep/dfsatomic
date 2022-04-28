@@ -4,6 +4,10 @@ import Input from '../atoms/Input'
 import {useForm} from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import {InputSchema} from '../schema/InputSchema'
+import {Link} from 'react-router-dom'
+import {PlusIcon} from '@heroicons/react/outline'
+import Filterbutton from '../molecules/Filterbutton';
+import Searchbar from '../molecules/Searchbar';
 
 const Form = () => {
 
@@ -33,26 +37,29 @@ const Form = () => {
   // }
 
   return (
+    <>
     <div className='w-10/12 font-poppins border bg-white   sm:w-1/3 px-4 bg-slate-50 rounded-lg shadow-md overflow-hidden py-2'>
 
         <form className=' flex flex-col text-center'  >
-            <div className=' text-center text-4xl font-semibold text-slate-700 my-5'>Login</div>
-            <Input type='text' placeholder='enter email' name="email"  style='w-11/12' />
-            <Input type='password' placeholder='enter password' name='password' style='w-11/12' />
-            <Button title='Login' variant='primary' style=' mx-auto' />
+            <h2 className='text-center text-gray-700 my-5'>Login</h2>
+            {/* <Filterbutton/> */}
+            <Input type='text' placeholder='Enter email' name="email"  style=' mx-auto' />
+            <Input type='password' placeholder='Enter password' name='password' style=' mx-auto' />
+            <Button title='Login' variant='primary' style=' mx-auto h-11 text-xl' />
         </form>
         
         
-        <div className='text-blue-500 text-center underline'>forgot password</div>
+        <Link to="/forgot_password" className='text-blue-500 flex justify-center my-2 underline' >forgot password</Link>
         <div className='my-5'>
           Deerhold Food System <span className='font-bold'>DFS</span> 
         </div>
         <div className='text-center'>
           © 2022 Deerhold Nepal Ltd.
         </div>
-       
+        {/* <Searchbar/> */}
     </div>
-
+    {/* <Searchbar/> */}
+</>
   )
 }
 

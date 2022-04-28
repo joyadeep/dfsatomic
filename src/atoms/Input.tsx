@@ -3,6 +3,7 @@ import React from 'react'
 import {useForm} from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import {InputSchema} from '../schema/InputSchema'
+import { string } from 'yup';
 
 // const {
 //   register,
@@ -19,14 +20,15 @@ interface Iinput{
     value?:string;
     style?:string;
     register?:string;
+    visibility?:"invisible" | "hidden" | "visible";
     handleChange?:(event:React.ChangeEvent<HTMLInputElement>)=>void;
 }
 
-const Input:React.FC<Iinput> = ({type,placeholder,name,value,handleChange,style}) => {
+const Input:React.FC<Iinput> = ({type,placeholder,name,value,handleChange,style,visibility}) => {
   return (
     <>
-    <input type={type} placeholder={placeholder}   className={`w-full font-poppins h-12 outline-none pl-3 text-xl rounded border-2 border-slate-300 ${style}`}   />
-    <span className=" pb-1 text-xs w-11/12 mx-auto text-left  text-red-600">⚠ Error detected </span>
+    <input type={type} placeholder={placeholder}   className={`w-full font-poppins h-11 outline-none pl-3 text-lg sm:text-md  rounded border-2 border-slate-300 ${style}`}   />
+    <span className={` ${visibility} pb-1 text-xs w-11/12 mx-auto text-left  text-red-600`}>⚠ Error detected </span>
    
     </>
   )
