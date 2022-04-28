@@ -9,7 +9,7 @@ const Feedback = () => {
       <h2 className='text-gray-700'>Feedback</h2>
         <div className=' w-2/5'>
           <Textarea placeholder='Enter your feedback here.'/>
-            <Button title='Submit' variant='primary' style='text-2xl'/>
+            <Button title='Submit' variant='primary' style='text-xl'/>
         </div>
     </div>
   )

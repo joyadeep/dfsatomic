@@ -28,7 +28,7 @@ const Input:React.FC<Iinput> = ({type,placeholder,name,value,handleChange,style,
   return (
     <>
     <input type={type} placeholder={placeholder}   className={`w-full font-poppins h-11 outline-none pl-3 text-lg sm:text-md  rounded border-2 border-slate-300 ${style}`}   />
-    <span className={` ${visibility} pb-1 text-xs w-11/12 mx-auto text-left  text-red-600`}>⚠ Error detected </span>
+    <span className={` ${visibility} py-1 text-xs w-full pl-3 mx-auto text-left  text-red-600`}>⚠ Error detected </span>
    
     </>
   )

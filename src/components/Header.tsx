@@ -7,7 +7,7 @@ import User from '../molecules/User';
 const Header = () => {
   const[ispressed,setIspressed]=useState(false);
   return (
-    <div className=' shadow-md bg-white px-0 w-screen flex flex-row items-center justify-between h-20 bg-slate-50 absolute'>
+    <div className=' shadow-md bg-white px-0 w-full flex flex-row items-center justify-between h-20 bg-slate-50 absolute'>
         <div className='h-full w-fit flex items-center pl-5'>
             <img src={logo} className="fit-cover sm:w-fit w-5/6"  />
         </div>
