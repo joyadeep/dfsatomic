@@ -8,21 +8,21 @@ import Header from './components/Header'
 import Feedback from './pages/Feedback'
 import Button from './atoms/Button';
 import Reset from './pages/Reset';
+import FoodMenu from './pages/FoodMenu';
 
 function App() {
 
   return (
-    <div className='bg-slate-100 h-screen'>
+    <div className='bg-gray-100 h-screen'>
       <Header/>
      <Routes>
        <Route path='/' element={<LoginPage/>} />
        <Route path='/forgot_password' element={<Reset/>} />
        <Route path='/feedback' element={<Feedback/>}/>
+       <Route path='/menu' element={<FoodMenu/>} />
 
      </Routes>
      
-     <Button title='test btn' variant='primary' style='hover:transition-all triansition duration-700 hover:ease-in-out hover:duration-700 hover:translate-x-5'/>
-    {/* <Reset/> */}
     </div>
   )
 }
