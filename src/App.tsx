@@ -9,6 +9,7 @@ import Feedback from './pages/Feedback'
 import Button from './atoms/Button';
 import Reset from './pages/Reset';
 import FoodMenu from './pages/FoodMenu';
+import Menulist from './components/Menulist';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
        <Route path='/' element={<LoginPage/>} />
        <Route path='/forgot_password' element={<Reset/>} />
        <Route path='/feedback' element={<Feedback/>}/>
-       <Route path='/menu' element={<FoodMenu/>} />
+       <Route path='/menu' element={<Menulist/>} />
 
      </Routes>
      
