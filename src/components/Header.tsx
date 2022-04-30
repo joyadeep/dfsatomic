@@ -16,7 +16,7 @@ const Header = () => {
             !ispressed?<MenuIcon onClick={()=>{setIspressed(!ispressed)}} className='w-10 cursor-pointer h-10 text-slate-700'/>:<XIcon onClick={()=>{setIspressed(!ispressed)}} className='w-10 h-10 text-slate-700 cursor-pointer'/>
           }
         </div>
-          <div className={`${ispressed?"bg-onyx text-white translate-x-0 ":"translate-x-full hidden  "}  flex flex-col justify-evenly items-center absolute top-20 w-screen h-[calc(100vh-80px)] overflow-hidden sm:h-fit sm:bg-transparent sm:flex sm:flex-row sm:visible sm:w-fit sm:space-x-5 sm:right-0 sm:translate-x-0 sm:pr-5 sm:relative sm:top-0  font-poppins text-xl bg-slate-400 `}>
+          <div className={`${ispressed?"bg-onyx text-white translate-x-0 ":"translate-x-full hidden  "} z-10  flex flex-col justify-evenly items-center absolute top-20 w-screen h-[calc(100vh-80px)] overflow-hidden sm:h-fit sm:bg-transparent sm:flex sm:flex-row sm:visible sm:w-fit sm:space-x-5 sm:right-0 sm:translate-x-0 sm:pr-5 sm:relative sm:top-0  font-poppins text-xl bg-slate-400 `}>
 
              {/* TODO : should have done translate instead of -right-32 . kya kar raha heh tu bahi. ye doglapan hain.. */}
           <User/>
