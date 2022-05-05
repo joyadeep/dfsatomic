@@ -2,9 +2,9 @@ import React from 'react'
 
 const Orders = () => {
   return (
-    <div className='relative border-2 border-black rounded-md py-2 px-1 h-fit'>
+    <div className='relative border border-slate-400 rounded-md py-2 px-1 h-fit'>
         <div className='absolute -top-4 left-3 bg-iris-400 p-1 rounded-sm text-white font-poppins font-semibold '>Today's Order</div>
-        <table className='w-full mt-4 rounded px-3 text-center text-white font-poppins overflow-hidden'>
+        <table className='w-full mt-4 rounded-md px-3 text-center text-white font-poppins overflow-hidden'>
             <thead className='bg-slate-400 h-10'>
                 <tr>
                     <td className='border'>Opt</td>

@@ -6,7 +6,7 @@ import FoodTable from './FoodTable'
 
 const Menu = () => {
   return (
-    <div className='w-full sm:w-2/3 h-fit bg-green-200 font-poppins'>
+    <div className='w-full sm:w-2/3 h-fit font-poppins'>
         <div className='flex flex-row justify-between items-center'>
             {/* <Searchbar/> */}
             {/* <Filterbutton/> */}
