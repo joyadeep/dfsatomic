@@ -10,9 +10,10 @@ import Filterbutton from '../molecules/Filterbutton';
 import Searchbar from '../molecules/Searchbar';
 import Modal from './Modal';
 import Checkbox from '../atoms/Checkbox';
+import Radio from '../atoms/Radio';
 
 const Form = () => {
- const [isSelected,setIsSelected]=useState(false)
+ const [isSelected,setIsSelected]=useState("")
   const {
     register,
     handleSubmit,
@@ -45,20 +46,26 @@ const Form = () => {
         <form className=' flex flex-col text-center'  >
             <h2 className='text-center text-gray-700 my-5'>Login</h2>
             {/* <Filterbutton/> */}
-            <Input type='text' placeholder='Enter email' name="email" visibility='invisible' style='mx-auto' />
-            <Input type='password' placeholder='Enter password' name='password' visibility='invisible' style=' mx-auto' />
+            <Input type='text' placeholder='Enter email' name="email"  style='mx-auto' />
+            <Input type='password' placeholder='Enter password' name='password' style=' mx-auto' />
             <Button title='Login' variant='primary' style=' mx-auto h-11 text-xl'/>
         </form>
         
         
         <Link to="/forgot_password" className='text-blue-500 flex justify-center my-2 underline' >forgot password</Link>
-        <div className='my-5'>
+        <div className='my-5 text-center'>
           Deerhold Food System <span className='font-bold'>DFS</span> 
         </div>
         <div className='text-center'>
           © 2022 Deerhold Nepal Ltd.
           </div>
+          {/* <Radio isSelected={isSelected} setSelected={setIsSelected} value="first" />
+          <Radio isSelected={isSelected} setSelected={setIsSelected} value="second" /> */}
     </div>
+          {
+            console.log(isSelected)
+            
+          }
 
    
 </>
