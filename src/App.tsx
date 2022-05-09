@@ -10,6 +10,7 @@ import Button from './atoms/Button';
 import Reset from './pages/Reset';
 import FoodMenu from './pages/FoodMenu';
 import Menulist from './components/Menulist';
+import Modal from './components/Modal';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
        <Route path='/forgot_password' element={<Reset/>} />
        <Route path='/feedback' element={<Feedback/>}/>
        <Route path='/menu' element={<Menulist/>} />
+       <Route path="/modal" element={<Modal/>} />
 
      </Routes>
      

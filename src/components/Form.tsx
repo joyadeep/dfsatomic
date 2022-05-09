@@ -8,9 +8,11 @@ import {Link} from 'react-router-dom'
 import {PlusIcon} from '@heroicons/react/outline'
 import Filterbutton from '../molecules/Filterbutton';
 import Searchbar from '../molecules/Searchbar';
+import Modal from './Modal';
+import Checkbox from '../atoms/Checkbox';
 
 const Form = () => {
-
+ const [isSelected,setIsSelected]=useState(false)
   const {
     register,
     handleSubmit,
@@ -35,17 +37,17 @@ const Form = () => {
   //   console.log(user);
     
   // }
-
+ 
   return (
     <>
-    <div className='w-10/12 font-poppins border bg-white   sm:w-1/3 px-4 bg-slate-50 rounded-lg shadow-md overflow-hidden py-2'>
+    <div className='w-10/12 font-poppins border  sm:w-1/3 px-4 bg-slate-50 rounded-lg shadow-md overflow-hidden py-2'>
 
         <form className=' flex flex-col text-center'  >
             <h2 className='text-center text-gray-700 my-5'>Login</h2>
             {/* <Filterbutton/> */}
-            <Input type='text' placeholder='Enter email' name="email"  style=' mx-auto' />
-            <Input type='password' placeholder='Enter password' name='password' style=' mx-auto' />
-            <Button title='Login' variant='primary' style=' mx-auto h-11 text-xl' />
+            <Input type='text' placeholder='Enter email' name="email" visibility='invisible' style='mx-auto' />
+            <Input type='password' placeholder='Enter password' name='password' visibility='invisible' style=' mx-auto' />
+            <Button title='Login' variant='primary' style=' mx-auto h-11 text-xl'/>
         </form>
         
         
@@ -55,10 +57,10 @@ const Form = () => {
         </div>
         <div className='text-center'>
           © 2022 Deerhold Nepal Ltd.
-        </div>
-        {/* <Searchbar/> */}
+          </div>
     </div>
-    {/* <Searchbar/> */}
+
+   
 </>
   )
 }
